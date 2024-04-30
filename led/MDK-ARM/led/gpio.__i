@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I "C:/Program Files (x86)/STM32CubeMX/STM32Cube_FW_F1_V1.8.5/Drivers/STM32F1xx_HAL_Driver/Inc" -I "C:/Program Files (x86)/STM32CubeMX/STM32Cube_FW_F1_V1.8.5/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I "C:/Program Files (x86)/STM32CubeMX/STM32Cube_FW_F1_V1.8.5/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I "C:/Program Files (x86)/STM32CubeMX/STM32Cube_FW_F1_V1.8.5/Drivers/CMSIS/Include"
+-I.\RTE\_led
+-IC:\Users\Àîç÷Õð\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+-IC:\Users\Àîç÷Õð\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB
+-o led\gpio.o --omf_browse led\gpio.crf --depend led\gpio.d "../Core/Src/gpio.c"
