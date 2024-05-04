@@ -86,13 +86,15 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-
+  OLED_Init();
+  OLED_ShowString (1,1,"QWE");
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  OLED_ShowString(1,1,"test");
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
